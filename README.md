@@ -80,3 +80,9 @@ ex)
 bin\OpenPoseDemo.exe --video examples\media\video.avi
 ```
 를 입력하면 OpenPose가 실행되어 영상이 추론된다.
+<br>
+추론된 영상 저장하기 
+```
+bin\OpenPoseDemo.exe --video examples\media\영상파일이름.확장자 --write_video 경로.avi
+```
+`--write_video 경로.avi`옵션을 이용하면 추론된 영상 저장이 가능하다.
