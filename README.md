@@ -4,7 +4,7 @@
 
 ### 방법1)
 https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/OpenPose.ipynb <br>
-에서 첫번째 코드셀 다음에
+에서 첫번째 코드셀 다음에 코드 셀을 추가하여 아래 코드 입력
 ```
 from google.colab import files
 
@@ -14,7 +14,6 @@ for fn in uploaded.keys():
   print('User uploaded file "{name}" with length {length} bytes'.format(
       name=fn, length=len(uploaded[fn])))
 ```
-코드 셀 추가 후 위의 코드 입력<br>
 실행하여 추론하길 원하는 영상파일 업로드<br>
 <br>
 그 아래 두 개의 코드셀 삭제하기
@@ -39,20 +38,21 @@ YouTubeVideo(YOUTUBE_ID)
 ```
 이것
 <br>
-그리고 코드 셀을 추가하여
+그리고 코드 셀을 추가하여 아래의 코드 입력
 ```
 !rm openpose.avi
 !cd openpose && ./build/examples/openpose/openpose.bin --video ../영상파일이름.확장자 --write_json ./output/ --display 0  --write_video ../openpose.avi
 # convert the result into MP4
 !ffmpeg -y -loglevel info -i openpose.avi output.mp4
 ```
-입력 후 "영상파일이름.확장자"를 업로드시킨 영상파일이름.확장자로 바꾼 후 (ex. video.avi) 실행<br>
+"영상파일이름.확장자"를 업로드시킨 영상파일이름.확장자로 바꾼 후 (ex. video.avi) 실행<br>
 그리고 맨 아래의 코드 셀을 실행하면 추론된 영상이 나온다.<br>
 왼쪽의 파일목록에서 output.mp4 를 마우스 우클릭 후 '다운로드'를 클릭하면 다운로드가 가능하다.
 
 
 <br>
 <br>
+
 ### 방법2)
 CUDA와 CUDNN설치할 것.
 
