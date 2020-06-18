@@ -54,7 +54,7 @@ YouTubeVideo(YOUTUBE_ID)
 <br>
 
 ### 방법2)
-CUDA와 CUDNN설치할 것.
+#### CUDA와 CUDNN 사전에 설치할 것!!
 
 https://github.com/CMU-Perceptual-Computing-Lab/openpose/releases 에서 <br>
 "openpose-1.6.0-binaries-win64-gpu-python-flir-3d_recommended.zip"(gpu 이용할 시) 혹은 
@@ -79,4 +79,4 @@ bin\OpenPoseDemo.exe --video examples\media\영상파일이름.확장자
 ex)
 bin\OpenPoseDemo.exe --video examples\media\video.avi
 ```
-를 입력하면 OpenPose가 실행된다.
+를 입력하면 OpenPose가 실행되어 영상이 추론된다.
